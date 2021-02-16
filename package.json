@@ -1,0 +1,21 @@
+{
+  "name": "web-components-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "esbuild ./index.js --bundle --loader:.js=jsx --jsx-factory=preact.h --jsx-fragment=preact.Fragment --outfile=dist.js --watch",
+    "build": "esbuild ./index.js --bundle --loader:.js=jsx --jsx-factory=preact.h --jsx-fragment=preact.Fragment --outfile=dist.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Xavier Drdak",
+  "license": "ISC",
+  "devDependencies": {
+    "esbuild": "^0.8.46"
+  },
+  "dependencies": {
+    "preact": "^10.5.12",
+    "preact-custom-element": "^4.2.1"
+  }
+}
